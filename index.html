@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="converter">
+            <div class="input-group">
+                <input type="number" id="celsius" placeholder="Celsius" oninput="convertToFahrenheit()">
+                <span>°C = </span>
+                <span id="fahrenheit">?</span>
+                <span>°F</span>
+            </div>
+            <div class="input-group">
+                <input type="number" id="fahrenheitInput" placeholder="Fahrenheit" oninput="convertToCelsius()">
+                <span>°F = </span>
+                <span id="celsiusOutput">?</span>
+                <span>°C</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

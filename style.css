@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.95);
+    padding: 30px 25px 25px 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: "🌡️";
+    font-size: 3rem;
+    position: absolute;
+    top: -25px;
+    right: 20px;
+    opacity: 0.15;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 18px 0;
+    border: 1px solid #b3c6e0;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    background: #f7fbff;
+    transition: border 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #b3c6e0;
+    background: #f7fbff;
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #007BFF 0%, #00C6FF 100%);
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0056b3 0%, #00aaff 100%);
+}
+
+.result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007BFF;
+    text-align: center;
+    margin-top: 28px;
+    background: #eaf6ff;
+    border-radius: 8px;
+    padding: 16px 0;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.05);
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 18px 8px 18px 8px;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+}
